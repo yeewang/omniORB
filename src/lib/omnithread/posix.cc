@@ -95,6 +95,11 @@
 #endif
 #endif
 
+#if defined(__ANDROID__)
+#include <sys/time.h>
+#include <unistd.h>
+#endif
+
 #define DB(x) // x
 //#include <iostream.h> or #include <iostream> if DB is on.
 
